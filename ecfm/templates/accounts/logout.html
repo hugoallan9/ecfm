@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %} Salir del sistema {% endblock %}
+
+{% block content %}
+  <h2> Usuario no autenticado </h2>
+  <strong> Por favor </strong>
+  <a href="{% url 'login'%}"> Identifícate </a>
+  {% endblock %}

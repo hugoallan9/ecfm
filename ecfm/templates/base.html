@@ -1,0 +1,15 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <link href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+   rel="stylesheet" media="screen" />
+  <title>{% block title %} Asociación de Matemáticos de Guatemala
+    {% endblock %} </title>
+</head>
+<body>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
