@@ -1,0 +1,50 @@
+\documentclass[12pt,twoside]{book}
+
+%%%%%%%%%%% Paquete Tcolorbox
+\usepackage[skins, breakable, hooks]{tcolorbox}
+
+%%%%%%%%%%% Diseño global del documento
+\usepackage[paperwidth=8.5in, paperheight=11in, left=1in, right=0.75in, top=0.950in, bottom=0.925in]{geometry}
+
+
+
+
+%Para compilar en XeLaTeX con tildes
+\usepackage{polyglossia}
+\setmainlanguage{spanish}
+%
+ \usepackage{varwidth}
+ \usepackage{amsmath, amsfonts, wasysym}
+%
+ \tcbuselibrary{skins} 
+\input{datos}
+\setmainfont{Open Sans Condensed Light}
+\begin{document}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay,yshift=1.5cm, xshift=1.2cm]
+\node at (0,0) {\includegraphics[width=5.2cm,height=1.2cm]{usac.jpg}};
+\end{tikzpicture}
+\begin{tikzpicture}[remember picture,overlay,yshift=1.5cm, xshift=13.2cm]
+\node at (0,0) {\includegraphics[width=5.2cm,height=1.6cm]{ecfm.jpg}};
+\end{tikzpicture}
+\vspace{2cm}
+\begin{center}
+	\Huge \textbf{NOMBRAMIENTO}
+\end{center}
+\vspace{2cm} 
+Por este medio se nombra a \nombre  que se indentifica con registro de personal \registro para participar en \evento el cual se realizará en \lugar del  \dias.\\
+
+\noindent Dicho  nombramiento es debido a que la escuela tiene interés de que participe como parte de las actividades de \tipoEvento. \\
+
+\noindent El presente se firma el día \today. \\
+\vspace{2cm}
+
+\begin{center}
+	Edgar Aníbal Cifuentes Anleu\\
+	Director
+\end{center}
+
+\vspace{2cm}
+\noindent Adjunto invitación
+
+\end{document}
