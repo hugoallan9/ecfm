@@ -60,10 +60,11 @@ class Listado:
     def enviar_mail(self):
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login("hugoallangm@gmail.com", "")
+        server.login("llegadaecfm@gmail.com", "3cyA2YnZTb7gvVym")
         for x in self.listado_nuevo:
-            msg = x[0] + str(x[1])
-            server.sendmail("hugoallangm@hotmail.com", "hugoallangm@hotmail.com", msg)
+            msg = 'T ' + str(x[1].hour*100 + x[1].minute)
+            print msg
+            server.sendmail("llegadaecfm@hotmail.com", "egramajo1@hotmail.com", msg)
         server.quit()
 
     def reset(percent=2):
